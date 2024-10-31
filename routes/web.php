@@ -31,15 +31,15 @@ route::get('/view_product', [AdminController::class, 'ViewProduct'])->name('admi
 route::post('/add_product', [AdminController::class, 'AddProduct'])->name('admin.add_product');
 route::get('/show_product', [AdminController::class, 'ShowProduct'])->name('admin.show_product');
 route::get('/delete_product/{id}', [AdminController::class, 'DeleteProduct'])->name('admin.delete_product');
-route::get('/edit_product/{id}', [AdminController::class, 'EditProduct'])->name('admin.edit_product');
+route::get('/edit_product/{id}', [AdminController::class, 'EditProduct'])->name('admin.edit_product');      
 route::post('/update_product/{id}', [AdminController::class, 'UpdateProduct']);
 Route::get('/search-product', [AdminController::class, 'SearchProduct']);
 Route::get('/search-order', [AdminController::class, 'SearchOrder']);
 route::get('/user-orders', [AdminController::class, 'UserOrders'])->name('admin.user_orders');
 route::get('/update-order/{user_id}/{order_id}/{delivery_status}', [AdminController::class, 'UpdateOrder']);
 route::get('/print-bill/{order_id}', [AdminController::class, 'PrintBill']);
-route::get('/customers', [AdminController::class, 'Customers']);
-route::get('/delete-user/{id}', [AdminController::class, 'DeleteUser']);
+route::get('/customers', [AdminController::class, 'Customers']);        
+route::get('/delete-user/{id}', [AdminController::class, 'DeleteUser']);        
 Route::get('/search-user', [AdminController::class, 'SearchUser']);
 
 /* User routes */
